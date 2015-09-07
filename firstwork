@@ -1,0 +1,23 @@
+module One where
+
+import Data.List
+
+-- 1.a
+
+-- null
+
+null' x
+  | x == [] = True
+  | otherwise = False
+
+-- fst
+
+fst' (a,b) = a
+
+-- snd
+
+snd' (a,b) = b
+
+-- zip
+
+zip' [a] [b] = [(a,b)]
