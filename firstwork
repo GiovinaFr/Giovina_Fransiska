@@ -34,3 +34,25 @@ or' x
   | x == [False, True] = True
   | otherwise = False
 
+-- pembatas
+
+max' a b
+  | a>b = a
+  | b>a = b
+  | otherwise = a
+
+-- pembatas
+
+min' a b
+  | a<b = a
+  | b<a = b
+  | otherwise = a
+
+-- pembatas
+
+head' (x:xs) = x
+
+-- pembatas
+
+tail' (x:xs) = xs
+
