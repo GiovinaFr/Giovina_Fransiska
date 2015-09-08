@@ -56,3 +56,30 @@ head' (x:xs) = x
 
 tail' (x:xs) = xs
 
+-- pembatas
+
+take' x [] = []
+take' 0 (x:xs) = []
+take' a (x:xs) = x : take' (a-1) xs
+
+-- pembatas
+
+drop' x [] = []
+drop' 0 (x:xs) = (x:xs)
+drop' n (a:xs) = drop' (a+1) xs
+
+--pembatas
+
+length' [] = 0
+length' (x:xs) = 1 + ( length' xs)
+
+-- pembatas
+
+sum' [] = 0
+sum' (x:xs) = x + sum' xs
+
+-- pembatas
+
+delete' x [] = []
+delete' 0 (x:xs) = (x:xs)
+delete' a (x:xs) =  
