@@ -80,6 +80,8 @@ sum' (x:xs) = x + sum' xs
 
 -- pembatas
 
-delete' x [] = []
-delete' 0 (x:xs) = (x:xs)
-delete' a (x:xs) =  
+delete' a (x:xs)
+  | a == x = xs
+  | a /= x = x : delete' a(xs)
+  | a /= x = (x:xs)
+
