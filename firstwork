@@ -94,3 +94,11 @@ notElem' a (x:xs)
 
 -- pembatas
 
+delete' a (x:xs)
+  | a == x = xs
+  | a /= x = x : delete' a(xs)
+  | a /= x = (x:xs)
+  
+-- pembatas
+
+
