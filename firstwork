@@ -102,3 +102,24 @@ delete' a (x:xs)
 -- pembatas
 
 
+insert' a [] = [a]
+insert' a (x:xs)
+  | a <= x = a : (x:xs)
+  | a > x = x : insert' a (xs)
+
+-- pembatas
+
+
+product' [] = 1
+product' [x] = x
+product' (x:xs) = x * product' xs
+
+-- pembatas
+
+concat' [] = []
+concat' [[x]] = [x]
+concat' (x:xs) = x ++ concat' xs
+
+-- pembatas
+
+
