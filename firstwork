@@ -80,8 +80,17 @@ sum' (x:xs) = x + sum' xs
 
 -- pembatas
 
-delete' a (x:xs)
-  | a == x = xs
-  | a /= x = x : delete' a(xs)
-  | a /= x = (x:xs)
+elem' a [] = False
+elem' a (x:xs)
+  | a == x = True
+  | a /= x = elem' a (xs)
+
+-- pembatas
+
+notElem' a [] = True
+notElem' a (x:xs)
+  | a == x = False
+  | a /= x = notElem' a (xs)
+
+-- pembatas
 
