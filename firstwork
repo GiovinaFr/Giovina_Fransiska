@@ -122,4 +122,6 @@ concat' (x:xs) = x ++ concat' xs
 
 -- pembatas
 
+-- pembatas
+
 
